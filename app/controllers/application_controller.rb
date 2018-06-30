@@ -43,7 +43,7 @@ class ApplicationController < Sinatra::Base
   #INDEX ACTION
   get '/recipes' do
     @recipes=Recipes.all
-    :
+    erb :recipes
   end
 
 
